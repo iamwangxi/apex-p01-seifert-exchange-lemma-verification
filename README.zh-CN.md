@@ -20,8 +20,8 @@ PDF 哈希用于识别确切版本。本仓库不收录论文 PDF；后续版本
 设 $K$ 为非平凡结，$x,u,w$ 为 $IS(K)$ 的顶点，且
 
 $$
-\operatorname{dist}(x,u)=\operatorname{dist}(x,w)=1,
-\qquad \operatorname{dist}(u,w)=2.
+\mathrm{dist}(x,u)=\mathrm{dist}(x,w)=1,
+\qquad \mathrm{dist}(u,w)=2.
 $$
 
 以 $v\sim_{=}q$ 表示相等或邻接。存在在任何后来共同邻居 $z$ 给定前选定的 $w_\uparrow,w_\downarrow$，满足：

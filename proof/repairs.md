@@ -6,7 +6,7 @@ These are the accepted local repairs and their common interfaces, consolidated f
 
 ## Notation and reading order
 
-Let $M=E(K)$, with the fixed relative metric and longitude-leaf family $J$. Fix minima $S\in x$, $A\in w$, $B\in u$. In the perturbation arguments $A_0=A$, $[A_t]=w$, and $e(t)=\operatorname{Area}(A_t)-\operatorname{Area}(A_0)\ge0$. A “neat” surface is smooth and proper, transverse to the ambient boundary. Isotopy extension preserves $\partial M$ **setwise** unless a relative-collar condition is expressly imposed.
+Let $M=E(K)$, with the fixed relative metric and longitude-leaf family $J$. Fix minima $S\in x$, $A\in w$, $B\in u$. In the perturbation arguments $A_0=A$, $[A_t]=w$, and $e(t)=\mathrm{Area}(A_t)-\mathrm{Area}(A_0)\ge0$. A “neat” surface is smooth and proper, transverse to the ambient boundary. Isotopy extension preserves $\partial M$ **setwise** unless a relative-collar condition is expressly imposed.
 
 To avoid confusing a minimum surface $B$ with a rounded frontier, rounded frontiers below are denoted $\widehat T$. The positive auxiliary PDE solution is $h$; the actual perturbed graph difference is $F_t$. The common gain coefficient is always $\beta$, replacing the incompatible numerical uses of $g_0$ in the separate route computations.
 
@@ -36,7 +36,7 @@ To avoid confusing a minimum surface $B$ with a rounded frontier, rounded fronti
 In the inward collar $g=dr^2+\phi(r)^2g_T$, $\phi=1-r$, a vector $v=a\partial_r+X$ satisfies
 
 $$
-\operatorname{Hess}r(v,v)=\phi\phi'|X|_{g_T}^2\le0.
+\mathrm{Hess}r(v,v)=\phi\phi'|X|_{g_T}^2\le0.
 $$
 
 With the paper's convention $II(X,Y)=\langle\nabla_XY,\partial_r\rangle$, at $r=0$ one has $II=g_T$, trace 2. This supplies the local strictly convex barrier, not a globally strictly convex defining function on the knot exterior. Extending the same collar to negative $r$ supplies a smooth isometric exterior extension and uniform local geometry on compact charts.
@@ -60,7 +60,7 @@ The environmental and source conditions just listed satisfy these statements. Th
 Let $\Sigma$ be any smooth proper minimal surface supplied by $(E^*)$. Near a boundary point use its tangent-plane graph over the actual curved smooth planar half-neighbourhood. The projected boundary is smooth with nonzero tangent, so the domain has an interior tangent ball. Put $u=r|_\Sigma$. Properness gives $u>0$ in the interior and $u=0$ on its boundary. Minimality gives
 
 $$
-\Delta_\Sigma u=\operatorname{tr}_{T\Sigma}\operatorname{Hess}r\le0.
+\Delta_\Sigma u=\mathrm{tr}_{T\Sigma}\mathrm{Hess}r\le0.
 $$
 
 The smooth induced operator is uniformly elliptic locally with bounded drift. Apply the boundary-point lemma to $-u$, or the equivalent minimum form for $u$. The outward derivative is negative, so $du\ne0$ at the boundary. Thus $dr|_{T\Sigma}\ne0$, and $\Sigma$ is transverse to $\partial M$: it is neat.
@@ -150,7 +150,7 @@ Projection on the punctured truncation is now a **proper** local diffeomorphism 
 
 Choose an oriented sweep of the common tangent plane. Adjacent conormals are opposite; all sector angles are positive; the two actual boundary rays are opposite. The total angle is a positive odd multiple of $\pi$. Choose the first cumulative angle at least $\pi$. If it is below $2\pi$, the finite rays keep their strict order at small radii and their glued sectors form one graph with two genuine curved outer arcs. If it reaches $2\pi$, the last sector alone has opening in $(\pi,2\pi)$. At opening $\pi$, use the preceding curved-disc argument.
 
-Apply Hopf on this graph, using properness to keep its interior in $\operatorname{Int}M$, to obtain a nonzero $dr|_T$. **Only now** does $r(tv)=t,dr(v)+o(t)\ge0$ confine all tangent directions to a closed half-circle, forcing total angle $\pi$. The actual projected boundary has nonzero smooth tangent and the full graph is $C^1$, so the boundary repair applies. One must not assume total angle at most $\pi$ before Hopf.
+Apply Hopf on this graph, using properness to keep its interior in $\mathrm{Int}M$, to obtain a nonzero $dr|_T$. **Only now** does $r(tv)=t,dr(v)+o(t)\ge0$ confine all tangent directions to a closed half-circle, forcing total angle $\pi$. The actual projected boundary has nonzero smooth tangent and the full graph is $C^1$, so the boundary repair applies. One must not assume total angle at most $\pi$ before Hopf.
 
 Properness is inherited from the input, not proved from this regularity argument. For a smooth fixed-boundary area minimum, compactly supported interior variations give stability; density in $H^1_0$ extends the second-variation inequality. This is Dirichlet stability, not free-boundary stability. Given the missing sequence and compactness, the A.6 assembly by finite open-and-closed isotopy blocks and area continuity is sound. It still leaves [D12](open-items.md#d12) and [D22](open-items.md#d22) open. For any independently supplied smooth proper minimum, R01's Hopf argument gives neatness without this existence chain.
 
@@ -207,20 +207,20 @@ The relative error of a two-dimensional density is at most twice the ambient met
 
 $$
 \eta\left[g(m)-2\eta^2K^2-8m^2(\eta')^2-12K\eta Q^2\right].
-\tag{R3.1}
+\qquad\text{(R3.1)}
 $$
 
 This is an area-density estimate including $F_s$, not just a transverse-arc-length estimate.
 
 ### Common caps, regularity and actual support
 
-The corner object is already smooth proper neat away from its interior crease. Rounding cannot create external neatness. Put $0<d\le\min\{1,\operatorname{dist}(s,\partial M)\}$. For all four used sectors, take a common minimum of $R,d$ and common maximum of $K$. Define
+The corner object is already smooth proper neat away from its interior crease. Rounding cannot create external neatness. Put $0<d\le\min\{1,\mathrm{dist}(s,\partial M)\}$. For all four used sectors, take a common minimum of $R,d$ and common maximum of $K$. Define
 
 $$
 E=\min\left\{\frac{R}{32Q},\frac{d}{64Q},\frac1{32KQ},
 \sqrt{\frac{\beta}{8K^2}},\frac{\beta}{48KQ^2},1\right\},
 \qquad H=\frac{\sqrt\beta}{8M_\theta}.
-\tag{R3.2}
+\qquad\text{(R3.2)}
 $$
 
 Use $\eta\in C^\infty$, $0<\eta\le E$, $|\eta'|\le H$. The three losses in R3.1 are at most $\beta/4,\beta/8,\beta/4$, so
@@ -228,7 +228,7 @@ Use $\eta\in C^\infty$, $0<\eta\le E$, $|\eta'|\le H$. The three losses in R3.1 
 $$
 \text{slice gain}\ge\tfrac{27}{8}\beta\eta\ge\beta\eta,
 \qquad G(\gamma)=\int_\gamma\beta(\theta)\eta,ds>0.
-\tag{R3.3}
+\qquad\text{(R3.3)}
 $$
 
 The changed portion has coordinate radius $\le Q\eta$, geometric distance $\le2Q\eta$; isotopy/certification support can be kept within $16Q\eta$. These constants have been included in the safety caps. Width $\eta$ is a coordinate half-width, **not** geometric radius $\eta$. For example, the core height is $mc_0\eta$, exceeding $\eta$ if $mc_0>1$. Also a merely $C^1$, non-$C^2$ width makes this core non-$C^2$; endpoint matching alone cannot give a smooth surface. Use smooth widths in the body proof.
@@ -283,9 +283,9 @@ After fixing this rounded surface and field, put $K_1=\sup\|\nabla X\|$. The two
 
 $$
 |\partial_\sigma\log J_\sigma|\le2K_1,
-\quad |\operatorname{Area}(T(\sigma))-\operatorname{Area}(\widehat T)|
+\quad |\mathrm{Area}(T(\sigma))-\mathrm{Area}(\widehat T)|
 \le C\sigma,
-\quad C=2K_1e^{2K_1\sigma_0}\operatorname{Area}(\widehat T)<\infty.
+\quad C=2K_1e^{2K_1\sigma_0}\mathrm{Area}(\widehat T)<\infty.
 $$
 
 The constant may depend on $t$ and the chosen width. The order is **rounding, then finite $C$, then $\sigma$**; no uniform cost bound as $t\to0$ is required.
@@ -295,23 +295,23 @@ The constant may depend on $t$ and the chosen width. The order is **rounding, th
 
 **Competition locators:** Lemma 5.6, pp. 15–17, equations (14), (16)–(17). **External locator:** Hatcher, Lemma 1.10 proof, p. 20, same-boundary discs in a three-ball.
 
-Let the transverse inputs be $A$ and $B$, with disjoint leaf boundaries; $B$ is minimal, $A$ is in the class of a minimum $A_0$, and $e=\operatorname{Area}(A)-\operatorname{Area}(A_0)\ge0$. Their compact intersection is a finite union of interior circles. A disc patch must have an intersection circle as its boundary: a seam-free spanning disc would be the whole connected input and is excluded by the non-trivial-knot hypothesis.
+Let the transverse inputs be $A$ and $B$, with disjoint leaf boundaries; $B$ is minimal, $A$ is in the class of a minimum $A_0$, and $e=\mathrm{Area}(A)-\mathrm{Area}(A_0)\ge0$. Their compact intersection is a finite union of interior circles. A disc patch must have an intersection circle as its boundary: a seam-free spanning disc would be the whole connected input and is excluded by the non-trivial-knot hypothesis.
 
 A simple interior circle bounds at most one disc on a connected surface with boundary. If it bounds a disc on either input, $\pi_1$-injectivity implies that it is contractible on the other and also bounds a disc there. Let $\mathcal D$ be this finite nonempty disc-circle family when any disc patch exists. Write
 
 $$
-\mathcal A=\{\gamma\in\mathcal D:\operatorname{Int}D_A(\gamma)\cap B=\varnothing\},
-\quad \mathcal B=\{\gamma\in\mathcal D:\operatorname{Int}D_B(\gamma)\cap A=\varnothing\}.
+\mathcal A=\{\gamma\in\mathcal D:\mathrm{Int}D_A(\gamma)\cap B=\varnothing\},
+\quad \mathcal B=\{\gamma\in\mathcal D:\mathrm{Int}D_B(\gamma)\cap A=\varnothing\}.
 $$
 
 Each family is nonempty by selecting an inclusion-minimal disc on its own side. The selected circles need not be the same or simultaneously innermost on both sides.
 
-For $\gamma\in\mathcal A$, put $D=D_A(\gamma)$, $D'=D_B(\gamma)$. Their union is an embedded locally flat interior corner sphere. A qualitative rounding and irreducibility, followed by tame region transport, give a ball $Q_0$ with this exact corner boundary. The connected remainder $B_\gamma\setminus\gamma$ does not meet that sphere and connects to $\partial B\subset\partial M$; it lies outside $Q_0$. In particular $\operatorname{Int}Q_0\cap B=\varnothing$. Other pieces of $A$ inside the ball do not affect this one-sided operation.
+For $\gamma\in\mathcal A$, put $D=D_A(\gamma)$, $D'=D_B(\gamma)$. Their union is an embedded locally flat interior corner sphere. A qualitative rounding and irreducibility, followed by tame region transport, give a ball $Q_0$ with this exact corner boundary. The connected remainder $B_\gamma\setminus\gamma$ does not meet that sphere and connects to $\partial B\subset\partial M$; it lies outside $Q_0$. In particular $\mathrm{Int}Q_0\cap B=\varnothing$. Other pieces of $A$ inside the ball do not affect this one-sided operation.
 
 The exact corner replacement $B_0=B_\gamma\cup D$ is embedded and has
 
 $$
-\operatorname{Area}(B_0)=\operatorname{Area}(B)-\operatorname{Area}(D')+\operatorname{Area}(D).
+\mathrm{Area}(B_0)=\mathrm{Area}(B)-\mathrm{Area}(D')+\mathrm{Area}(D).
 $$
 
 **Do not describe $B_0$ as a smooth-isotopy image.** Directly round its original two sheets using R03's common four-sector width to obtain a smooth competitor $B''$. Do not introduce a thin smooth neck and then assume its curvature remains uniformly bounded.
@@ -325,22 +325,22 @@ The ball **must be slightly larger**: fixed-width rounding may enter a sector ou
 R03 now yields
 
 $$
-\operatorname{Area}(D_B(\gamma))+G(\gamma)\le\operatorname{Area}(D_A(\gamma))
+\mathrm{Area}(D_B(\gamma))+G(\gamma)\le\mathrm{Area}(D_A(\gamma))
 \quad(\gamma\in\mathcal A).
 $$
 
 Reverse the one-sided construction for $\gamma\in\mathcal B$. Use the minimality of **$A_0$**, not of the perturbed $A$, to obtain
 
 $$
-\operatorname{Area}(D_A(\gamma))+G(\gamma)\le\operatorname{Area}(D_B(\gamma))+e.
+\mathrm{Area}(D_A(\gamma))+G(\gamma)\le\mathrm{Area}(D_B(\gamma))+e.
 $$
 
-Choose $a\in\mathcal A$ minimizing its $A$-disc area and $b\in\mathcal B$ minimizing its $B$-disc area. If the other circle's disc is not a patch, its interior contains an inclusion-minimal patch disc. Therefore $\operatorname{Area}D_A(a)\le\operatorname{Area}D_A(b)$ and $\operatorname{Area}D_B(b)\le\operatorname{Area}D_B(a)$. For $\phi=\operatorname{Area}D_A-\operatorname{Area}D_B$,
+Choose $a\in\mathcal A$ minimizing its $A$-disc area and $b\in\mathcal B$ minimizing its $B$-disc area. If the other circle's disc is not a patch, its interior contains an inclusion-minimal patch disc. Therefore $\mathrm{Area}D_A(a)\le\mathrm{Area}D_A(b)$ and $\mathrm{Area}D_B(b)\le\mathrm{Area}D_B(a)$. For $\phi=\mathrm{Area}D_A-\mathrm{Area}D_B$,
 
 $$
 G(a)\le\phi(a)\le\phi(b)\le e-G(b),
 \qquad G(a)+G(b)\le e.
-\tag{R5.1}
+\qquad\text{(R5.1)}
 $$
 
 No frontier or no-disc-patch conclusion was used to construct the competitors or their widths. This is the common gain interface used in all configurations.
@@ -368,7 +368,7 @@ Once no disc patches have been proved, no discarded closed component is a sphere
 
 $$
 g(P_\uparrow)+g(P_\downarrow)=g(A)+g(B)+c/2\le g(A)+g(B).
-\tag{R6.1}
+\qquad\text{(R6.1)}
 $$
 
 An essential nonseparating compression reduces genus by one. A separating compression caps a closed side of genus $k\ge1$; retaining the original boundary side reduces genus by $k$. The single longitude boundary remains, each genuine compression strictly lowers integer genus, and a maximal finite sequence ends at an incompressible surface. Choose the actual sequences and their final classes before any later neighbour.
@@ -377,7 +377,7 @@ For total compression decrease $d\ge0$,
 
 $$
 g(w_\uparrow)+g(w_\downarrow)=g(u)+g(w)+c/2-d.
-\tag{R6.2}
+\qquad\text{(R6.2)}
 $$
 
 If equality with the input sum holds, $c=d=0$. Every genuine compression has positive decrease, so both sequences have no steps and the coarse surfaces are already incompressible. Discarded tori may remain since their Euler characteristic is zero. No claim that compression is area-nonincreasing is used.
@@ -387,11 +387,11 @@ If equality with the input sum holds, $c=d=0$. Every genuine compression has pos
 
 **Competition locators:** Lemma 4.9(2), pp. 11–12; Lemma 4.5 / Corollary 4.6, p. 10; T0 common-neighbour step p. 17; T2 common-neighbour step p. 36.
 
-Fix smooth coarse classes using positive admissible rounding/push-off scales, and then fix their terminating compression sequences and final vertices. For a later compact $Z$ disjoint from the transverse input union, put $d_Z=\operatorname{dist}(Z,A\cup B)>0$. Keeping width fixed while $\sigma\to0$ only approaches the rounded surface: a small disc crossing its rounded core but separated from the input disproves that inference. It is an auxiliary local countermodel, not a realized common-neighbour counterexample.
+Fix smooth coarse classes using positive admissible rounding/push-off scales, and then fix their terminating compression sequences and final vertices. For a later compact $Z$ disjoint from the transverse input union, put $d_Z=\mathrm{dist}(Z,A\cup B)>0$. Keeping width fixed while $\sigma\to0$ only approaches the rounded surface: a small disc crossing its rounded core but separated from the input disproves that inference. It is an auxiliary local countermodel, not a realized common-neighbour counterexample.
 
 Instead take $\eta_\lambda=\lambda\eta_0$, $\lambda>0$. All caps remain valid, support $16Q\lambda\eta_0$ tends uniformly to zero, and all positive-width endpoints have the same smooth class by R03. Choose $\lambda$ so the rounded surface lies within $d_Z/4$ of the input, **then** choose a positive push-off displacement below $d_Z/4$. Positive widths and push-off scales can be compared on compact interpolation tracks with a common small flow time and smoothly selected inward fields. The coarse class is unchanged; zero width is not a smooth endpoint.
 
-For an incompressible $Q$ disjoint from the current connected boundary surface $P$, clean an **already specified** compressing disc $D$. Its transverse intersections with $Q$ are finite interior circles. Choose an innermost disc $E\subset Q$ with interior disjoint from $D$, and let $F\subset D$ have the same boundary. The interior corner sphere $E\cup F$ bounds a ball. Connected $P$, disjoint from its sphere and joined to the ambient boundary, lies outside. The often omitted second check is that $D\setminus\operatorname{Int}F$ is a connected annulus containing $\partial D$; its interior does not meet the sphere, and its boundary is attached to the outside $P$. It too lies outside the ball.
+For an incompressible $Q$ disjoint from the current connected boundary surface $P$, clean an **already specified** compressing disc $D$. Its transverse intersections with $Q$ are finite interior circles. Choose an innermost disc $E\subset Q$ with interior disjoint from $D$, and let $F\subset D$ have the same boundary. The interior corner sphere $E\cup F$ bounds a ball. Connected $P$, disjoint from its sphere and joined to the ambient boundary, lies outside. The often omitted second check is that $D\setminus\mathrm{Int}F$ is a connected annulus containing $\partial D$; its interior does not meet the sphere, and its boundary is attached to the outside $P$. It too lies outside the ball.
 
 A ball slide replacing $F$ by a small parallel copy of $E$, smoothed in their shared collar, consequently hits neither $P$ nor the remainder of $D$. Use R05's slightly larger smooth ball and two smooth disc endpoints to realize the slide relative to $P$. A sufficiently small one-sided collar of $Q$ removes the selected circle and all circles inside $F$, without adding new ones. Finitely many slides clean $D$. They preserve the specified compression's output class. At each subsequent step first transport the next **originally specified** disc along the current ambient isotopy, then clean it. Induction preserves every intermediate and final class.
 
@@ -424,7 +424,7 @@ $$
 where $a^{ij}=\int_0^1\mathcal F_{p_ip_j}\,d\tau$, $d^i=\int\mathcal F_{p_iu}$, $e^j=\int\mathcal F_{up_j}$, $k_0=\int\mathcal F_{uu}$, all evaluated along that interpolation. Hence
 
 $$
-Lf=\operatorname{div}(a\nabla f)+b\cdot\nabla f+cf=0,
+Lf=\mathrm{div}(a\nabla f)+b\cdot\nabla f+cf=0,
 \quad b^j=d^j-e^j,\quad c=\partial_i d^i-k_0.
 $$
 
@@ -449,7 +449,7 @@ Take $R$ small enough for coercivity at least $\lambda/2$. Lax–Milgram gives $
 There is a standard barrier backup independent of the remembered exact GT 8.15 edition. Let $\psi=K(R^2-|x|^2)$. Then
 
 $$
-L\psi=-2K\operatorname{tr}a-2K(\partial_i a^{ij}+b^j)x_j+cK(R^2-|x|^2).
+L\psi=-2K\mathrm{tr}a-2K(\partial_i a^{ij}+b^j)x_j+cK(R^2-|x|^2).
 $$
 
 First fix $K$ large, then shrink $R$ so $L\psi\le-\|c\|_\infty$. The functions $q-\psi,-q-\psi$ have nonpositive boundary traces, including the half-disc's flat edge, and nonnegative $L$-values. Positive-part tests with the same coercivity give $|q|\le\psi\le KR^2$.
@@ -461,13 +461,13 @@ First fix $K$ large, then shrink $R$ so $L\psi\le-\|c\|_\infty$. The functions $
 Set $v=f/h$, $A_0=ha$, $d_0=aDh+hb$. Expanding gives
 
 $$
-L(hv)=vLh+\operatorname{div}(ha\nabla v)+(aDh+hb)\cdot\nabla v.
+L(hv)=vLh+\mathrm{div}(ha\nabla v)+(aDh+hb)\cdot\nabla v.
 $$
 
 Normalize with $k=(\det A_0)^{-1/2}$:
 
 $$
-\operatorname{div}(kA_0\nabla v)+(kd_0-A_0\nabla k)\cdot\nabla v=0.
+\mathrm{div}(kA_0\nabla v)+(kd_0-A_0\nabla k)\cdot\nabla v=0.
 $$
 
 The derivative $-A_0\nabla k$ belongs in the drift. The new symmetric principal matrix has determinant one and is elliptic; there is no new zero-order term. For the common-leaf case, $v$ has zero flat-edge trace.
@@ -508,7 +508,7 @@ $$
 
 on a sufficiently small punctured disc/half-disc. This is isolation **among critical/tangency points**, not isolation as a point of the intersection set. A Scherk graph difference $\log(\cos y/\cos x)$ has a unique critical point at zero but two zero arcs $y=\pm x$ through it, illustrating the wording correction without providing a global Seifert counterexample.
 
-If $w\equiv0$, $v$ is constant and its tangency value or zero boundary trace forces local coincidence. Coincidence germs are open in $\operatorname{Int}A$. At an interior limit point, closedness of $B$ and tangent-plane continuity give common graphs; the holomorphic factor vanishes on an open subset, so its uniqueness propagates coincidence across the graph. The germ set is also closed. Connectedness and proper closures give $A=B$, contradicting distinct vertices. Local coincidence is not propagated merely by continuity.
+If $w\equiv0$, $v$ is constant and its tangency value or zero boundary trace forces local coincidence. Coincidence germs are open in $\mathrm{Int}A$. At an interior limit point, closedness of $B$ and tangent-plane continuity give common graphs; the holomorphic factor vanishes on an open subset, so its uniqueness propagates coincidence across the graph. The germ set is also closed. Connectedness and proper closures give $A=B$, contradicting distinct vertices. Local coincidence is not propagated merely by continuity.
 
 If an interior tangency did not change sign, $v$ would attain a zero extremum; the strong maximum principle for the **zero-order-free** equation makes it identically zero, again impossible. Thus interior differences change sign arbitrarily near every tangency.
 
@@ -539,10 +539,10 @@ If circles $\gamma_n\subset A_{t_n}\cap B$ collapsed in diameter as $t_n\to0$, t
 
 This gives $\rho_0>0$ and a small-parameter threshold with every circle's diameter at least $\rho_0$. The transverse intersection is finite, nonempty (distance 2 excludes disjoint representatives), and consists of interior circles.
 
-Let the $N$ interior tangency balls of radius $2\rho_2$ be disjoint, with $4N\rho_2<\rho_0/8$ and the additional collar safety bounds. Put $P=\bigcup B_{2\rho_2}(p)$, $G=M\setminus P$, $G'=M\setminus\bigcup B_{\rho_2}(p)$. Collapse each ball to a point. A near-shortest quotient path may delete repeated visits to a collapsed point; lifting it adds at most $4\rho_2$ per ball. Hence $d(a,b)\le d'(a,b)+4N\rho_2$, while a circle's projected length is at most $\operatorname{length}(\gamma\cap G)$. Points with distance at least $\rho_0/2$ give
+Let the $N$ interior tangency balls of radius $2\rho_2$ be disjoint, with $4N\rho_2<\rho_0/8$ and the additional collar safety bounds. Put $P=\bigcup B_{2\rho_2}(p)$, $G=M\setminus P$, $G'=M\setminus\bigcup B_{\rho_2}(p)$. Collapse each ball to a point. A near-shortest quotient path may delete repeated visits to a collapsed point; lifting it adds at most $4\rho_2$ per ball. Hence $d(a,b)\le d'(a,b)+4N\rho_2$, while a circle's projected length is at most $\mathrm{length}(\gamma\cap G)$. Points with distance at least $\rho_0/2$ give
 
 $$
-\operatorname{length}(\gamma\cap G)>3\rho_0/8.
+\mathrm{length}(\gamma\cap G)>3\rho_0/8.
 $$
 
 The original circle may enter a ball many times; no uniform visit count is assumed. When $N=0$, omit that restriction and choose a positive scale under the remaining safety bounds. This is only Corollary B.4(1), independent of angle or tube estimates.
@@ -561,7 +561,7 @@ $$
 
 Take the intersection of all parameter thresholds, including that of B.4(1). The length proof does not call B.4(2)/(3), so there is no length/angle/width cycle. In particular the whole collar is not a constant level $f=-\varsigma t$; the cutoff must remain in $F_t$.
 
-For T1, $d_0=\operatorname{dist}(A\cap B,\partial M)>0$. Use only interior flattened charts, heights $f_p-t\psi_p$, with neighbourhoods at boundary distance greater than $d_0/2$. Boundary remains fixed; the same class/transversality/convergence conclusions hold. The first two collapse cases give $\rho_0$; the quotient gives length $>3\rho_0/8$ outside tangency balls. No boundary sign arc or collar projection argument is needed.
+For T1, $d_0=\mathrm{dist}(A\cap B,\partial M)>0$. Use only interior flattened charts, heights $f_p-t\psi_p$, with neighbourhoods at boundary distance greater than $d_0/2$. Boundary remains fixed; the same class/transversality/convergence conclusions hold. The first two collapse cases give $\rho_0$; the quotient gives length $>3\rho_0/8$ outside tangency balls. No boundary sign arc or collar projection argument is needed.
 
 <a id="r10"></a>
 ## R10 — Buffered full tubes, exact smooth platform and unified gain
@@ -618,7 +618,7 @@ After any sufficiently small fixed $t$, take its full-curve positive caps $E_t,H
 $$
 0<\eta_2(t)\le\tfrac12\min\{\eta_1,\min_{\Gamma_t}E_t\},
 \quad \eta_t=\eta_2(t)+(\eta_1-\eta_2(t))q|_{\Gamma_t}.
-\tag{R10.1}
+\qquad\text{(R10.1)}
 $$
 
 At $q=0$, nonnegative smooth $q$ has $dq=0$, so width is a small positive constant and derivative zero, satisfying even tiny bad-region caps. At $q>0$, the protected bounds give $\eta_t\le E_g/2\le E_t$ and $|\eta_t'|\le\eta_1L_q\le H_g/2\le H_t$. At $q=1$ it is **exactly** $\eta_1$. Thus the width is positive smooth on the whole curve, with no convolution loss or undocumented smoothing of pointwise constraints.
@@ -653,7 +653,7 @@ All uniform constants may depend on the fixed representatives, metric, foliation
 
 **Competition locators:** T2 positive-parameter comparison and common-neighbour step, p. 36; T1 reuse, p. 39.
 
-Take any positive compact parameter interval $J=[t_a,t_b]\subset(0,\delta]$. Transversality, boundary separation and distance from $S$ have positive minima. For the embedding velocity $V_t$, let $n_B$ be the unit normal of $B$ and $p_t=\operatorname{proj}_{TA_t}n_B$. Correct it along the intersection by the tangential velocity
+Take any positive compact parameter interval $J=[t_a,t_b]\subset(0,\delta]$. Transversality, boundary separation and distance from $S$ have positive minima. For the embedding velocity $V_t$, let $n_B$ be the unit normal of $B$ and $p_t=\mathrm{proj}_{TA_t}n_B$. Correct it along the intersection by the tangential velocity
 
 $$
 \tau_t=-\frac{\langle V_t,n_B\rangle}{|p_t|^2}p_t.
@@ -683,7 +683,7 @@ Construct the coarse surfaces by R06, fix compressions and final vertices. Equat
 For (d), enter **only if final genus equality holds**. R6.2 forces both compression sequences empty; the coarse classes are the output classes. Before discarding any closed component, the two corner frontiers partition $A\cup B$ off measure-zero seams, so their total area is $A(w)+A(u)$. Set $\varepsilon_0=\beta(\theta_0)\eta_0\ell_0>0$. Both frontiers use all seams, giving total rounding saving at least $2\varepsilon_0$. After rounding obtain the finite total push-off constant $C$, then choose a positive safe $\sigma$ with $C\sigma<\varepsilon_0$. Discarding closed components only reduces area. Thus
 
 $$
-\operatorname{Area}(P_\uparrow)+\operatorname{Area}(P_\downarrow)
+\mathrm{Area}(P_\uparrow)+\mathrm{Area}(P_\downarrow)
 <A(w)+A(u)-\varepsilon_0.
 $$
 
@@ -697,8 +697,8 @@ If final genus equality holds, again no genuine compression occurred. The whole 
 
 $$
 \begin{aligned}
-\operatorname{Area}(P_\uparrow)+\operatorname{Area}(P_\downarrow)
-&\le\operatorname{Area}(A_t)+\operatorname{Area}(B)-\varepsilon_*+C(t)\sigma\\
+\mathrm{Area}(P_\uparrow)+\mathrm{Area}(P_\downarrow)
+&\le\mathrm{Area}(A_t)+\mathrm{Area}(B)-\varepsilon_*+C(t)\sigma\\
 &<A(w)+A(u)-\varepsilon_*/4.
 \end{aligned}
 $$

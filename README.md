@@ -20,8 +20,8 @@ The PDF hash identifies the exact target even if the distribution filename chang
 For a non-trivial knot $K$, let $x,u,w$ be vertices of $IS(K)$ with
 
 $$
-\operatorname{dist}(x,u)=\operatorname{dist}(x,w)=1,
-\qquad \operatorname{dist}(u,w)=2.
+\mathrm{dist}(x,u)=\mathrm{dist}(x,w)=1,
+\qquad \mathrm{dist}(u,w)=2.
 $$
 
 Write $v\sim_{=}q$ for equality or adjacency. There are vertices $w_\uparrow,w_\downarrow$, chosen before any later common neighbour $z$, such that:
