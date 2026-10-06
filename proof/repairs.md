@@ -676,7 +676,7 @@ For (d), enter **only if final genus equality holds**. R6.2 forces both compress
 
 ```math
 \mathrm{Area}(P_\uparrow)+\mathrm{Area}(P_\downarrow)
-<A(w)+A(u)-\varepsilon_0.
+\lt A(w)+A(u)-\varepsilon_0.
 ```
 
 These smooth neat leaf-boundary surfaces represent the output classes. Taking their class infima gives (d), without an area claim for compression.
