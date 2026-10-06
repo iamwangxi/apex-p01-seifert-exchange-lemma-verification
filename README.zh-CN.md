@@ -17,21 +17,21 @@ PDF 哈希用于识别确切版本。本仓库不收录论文 PDF；后续版本
 
 ## 核查的陈述
 
-设 $K$ 为非平凡结，$x,u,w$ 为 $IS(K)$ 的顶点，且
+设 $`K`$ 为非平凡结，$`x,u,w`$ 为 $`IS(K)`$ 的顶点，且
 
-$$
+```math
 \mathrm{dist}(x,u)=\mathrm{dist}(x,w)=1,
 \qquad \mathrm{dist}(u,w)=2.
-$$
+```
 
-以 $v\sim_{=}q$ 表示相等或邻接。存在在任何后来共同邻居 $z$ 给定前选定的 $w_\uparrow,w_\downarrow$，满足：
+以 $`v\sim_{=}q`$ 表示相等或邻接。存在在任何后来共同邻居 $`z`$ 给定前选定的 $`w_\uparrow,w_\downarrow`$，满足：
 
-1. **(a)** 每个输出分别与 $x,u,w$ 相等或邻接。
-2. **(b)** 任意分别与 $u,w$ 相等或邻接的 $z$，与两个输出分别相等或邻接。
-3. **(c)** $g(w_\uparrow)+g(w_\downarrow)\le g(u)+g(w)$。
-4. **(d)** 若 (c) 等号成立，则 $A(w_\uparrow)+A(w_\downarrow)<A(u)+A(w)$。
+1. **(a)** 每个输出分别与 $`x,u,w`$ 相等或邻接。
+2. **(b)** 任意分别与 $`u,w`$ 相等或邻接的 $`z`$，与两个输出分别相等或邻接。
+3. **(c)** $`g(w_\uparrow)+g(w_\downarrow)\le g(u)+g(w)`$。
+4. **(d)** 若 (c) 等号成立，则 $`A(w_\uparrow)+A(w_\downarrow)<A(u)+A(w)`$。
 
-$A(v)$ 是光滑 neat 顶点类中、边界为固定纵向叶层之叶的曲面的相对面积下确界。核心顺序为 $\forall(x,u,w)\,\exists(w_\uparrow,w_\downarrow)\,\forall z$。不要求规范选择、唯一性或所有涉及的顶点同时具有不交代表。
+$`A(v)`$ 是光滑 neat 顶点类中、边界为固定纵向叶层之叶的曲面的相对面积下确界。核心顺序为 $`\forall(x,u,w)\,\exists(w_\uparrow,w_\downarrow)\,\forall z`$。不要求规范选择、唯一性或所有涉及的顶点同时具有不交代表。
 
 ## 范围与方法
 
@@ -60,8 +60,8 @@ $A(v)$ 是光滑 neat 顶点类中、边界为固定纵向叶层之叶的曲面�
 - 将正文对 **Theorem A.6、Lemma A.7** 的调用改接 §3 已引用的完整 **E(ii)**：已核预印本的 Schultens Theorem 2／Kapovich 附录 Corollary 11，加**独立 Hopf 横截论证**。正文确实调用附录 A，这是一条替换路线，不能说原稿从未使用附录 A。
 - **D29：** 不成立只限于真角端点的光滑环境同痕读法。角对象的拓扑运输用 tame 同痕；光滑同痕只比较两个正宽光滑端点。原稿另有分片光滑类别约定，不能将否定扩张到所有类别读法。
 - **D28/D35：** 采用正光滑宽度、真实几何支撑界及四扇区共同数据；盘交换的光滑竞争面在**稍大光滑三球**中认证。
-- **D43/D80/D81：** 同时缩圆角与推离尺度，比较正参数光滑族并运输**事前指定的压缩后代**，输出类先于 $z$ 固定。
-- **D77–D79：** 只在有缓冲的好区取得统一数据；统一收益系数及全部宽度界，先定 $\varepsilon_*$，再选 $t$。
+- **D43/D80/D81：** 同时缩圆角与推离尺度，比较正参数光滑族并运输**事前指定的压缩后代**，输出类先于 $`z`$ 固定。
+- **D77–D79：** 只在有缓冲的好区取得统一数据；统一收益系数及全部宽度界，先定 $`\varepsilon_*`$，再选 $`t`$。
 - 不可约性引用补 **[10, p. 228]**。其余分析、类别与引用精度更正见 [repairs.md](proof/repairs.md)。
 
 ## 限定与未闭合事项
@@ -90,6 +90,10 @@ Mermaid 图可由 GitHub 原生渲染。在仓库根目录，macOS 可用 `shasu
 ## AI 说明
 
 GPT-6.1 Sol performed the step decomposition, the line-by-line checks and an adversarial review, and drafted this package, in OpenAI Codex under human direction; Claude planned the process, checked key claims against the sources and reviewed the final text. No human expert has certified the work.
+
+## 版本说明
+
+本版本与 `0805270b7deb59fd8f7fbb0c4ddc7c0a68fbd469` 相比，只改了公式的写法。GitHub 的 Markdown 处理会去掉 `$...$` 里的 `\{`、`\,` 等反斜杠转义，还有部分公式没被识别，所以全部公式改用 GitHub 的原样数学语法。数学文字没有任何改动。
 
 ## 许可
 

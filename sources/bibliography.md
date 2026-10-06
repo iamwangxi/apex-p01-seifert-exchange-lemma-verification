@@ -20,11 +20,11 @@ Acquisition: supplied local copy of the official competition PDF. SHA-256: `34f1
 
 | Checked preprint location | Use |
 |---|---|
-| Definition 3, p. 3 | Relative least area over the proper isotopy class with boundary in $J$ |
+| Definition 3, p. 3 | Relative least area over the proper isotopy class with boundary in $`J`$ |
 | Theorem 2, p. 4 | Relative least-area representative: D06 / complete E(ii) |
-| Theorem 4, p. 4 | Arbitrary chosen relative minima are disjoint or coincide if the classes admit disjoint representatives: D08 / $(U^*)$ |
+| Theorem 4, p. 4 | Arbitrary chosen relative minima are disjoint or coincide if the classes admit disjoint representatives: D08 / $`(U^*)`$ |
 | Appendix setup, pp. 18–19 | Smooth proper embedded stable members, nonempty boundary, one source boundary over each ambient boundary, compact curve family |
-| Proposition 9, p. 19 (setup begins p. 18) | Compactness of $M_a$; printed-proof issue D10 |
+| Proposition 9, p. 19 (setup begins p. 18) | Compactness of $`M_a`$; printed-proof issue D10 |
 | Corollary 10, p. 19 | Finitely many open-and-closed isotopy blocks |
 | Corollary 11, p. 20 | Attainment, including its whole proper-class “in particular” clause |
 | Boundary adaptation and Theorem 12, p. 20 | FHS adaptation / disjointness; D09 remains unclosed at proof level |
@@ -49,11 +49,11 @@ Checked: smooth-category convention p. 89; homogeneous regularity p. 109; the th
 |---|---|
 | Hopf boundary-point lemma, D16 | Lemma 3.4, p. 34 |
 | Lax–Milgram, D57 | Theorem 5.8, p. 83 |
-| Supremum estimate with an $L^2$ term, D58 | Theorem 8.15, p. 189 |
+| Supremum estimate with an $`L^2`$ term, D58 | Theorem 8.15, p. 189 |
 | Comparison with the sign-dependent alternative | Theorem 8.16, p. 191; not substituted for 8.15 |
 | Strong maximum principle after removing the zero-order term, D67 | Theorem 8.19, p. 198 |
 | Interior gradient regularity and Schauder, D15 | Chapters 6/8; precise bounded-source version still to identify |
-| Linear local/flat-boundary regularity and $L^p$ Dirichlet inverse | Exact appropriate results still to identify |
+| Linear local/flat-boundary regularity and $`L^p`$ Dirichlet inverse | Exact appropriate results still to identify |
 | Nondivergence uniqueness used in the boundary repair | Theorem 9.5, p. 225; candidate locator from the comparative material |
 
 These locators are leads for later source checking, not a claim that the original pages were read. The repair states the actual analytic hypotheses and gives a barrier backup for positivity.
@@ -64,7 +64,7 @@ These locators are leads for later source checking, not a claim that the origina
 
 **Checked edition:** author version dated 21 November 2005, acquired from the [RWTH author publication page / recorded PDF](https://instmath.rwth-aachen.de/~heiko/veroeffentlichungen/cartan.pdf). PDF SHA-256: `136ffb0ad864e22d75aa8113987ad61de15aada16f3ef1161ff3c99356fe063a`.
 
-Checked Theorem 4.1, case $m=1$, p. 18, and the boundary nondegeneracy/completion argument p. 22, including visual page checks in the supplied record. This supplies a $C^{1,\alpha}$ closed-boundary diffeomorphism for the stated metric and Jordan-boundary hypotheses. Only a local compact patch away from the Möbius pole is used for bi-Lipschitz bounds. No separate full journal comparison was made.
+Checked Theorem 4.1, case $`m=1`$, p. 18, and the boundary nondegeneracy/completion argument p. 22, including visual page checks in the supplied record. This supplies a $`C^{1,\alpha}`$ closed-boundary diffeomorphism for the stated metric and Jordan-boundary hypotheses. Only a local compact patch away from the Möbius pole is used for bi-Lipschitz bounds. No separate full journal comparison was made.
 
 ## R05 — Vekua
 
@@ -86,7 +86,7 @@ Candidate Chapter III locators, **unverified against the book**: §1 equation (1
 
 Acquisition: journal PDF supplied by the human director; bibliographic route [DOI 10.32917/hmj/1206392900](https://doi.org/10.32917/hmj/1206392900). PDF SHA-256: `eb195635ce7ddb1c74caccae36d4493e875773f29de0f013eb91f5471c10b36c`.
 
-Targeted source check: p. 225, spanning surfaces, ambient equivalence and $IS(L)$ vertex/simplex conventions; p. 228, §2 around Theorem 2.1, irreducibility of a non-split link exterior. A knot is non-split; its single boundary component and exclusion of closed components make the spanning surface connected. Add **[10, p. 228]**, not Theorem A as a substitute locator for irreducibility. Theorem A, p. 226, gives connectedness and was additionally checked as background; it is not a predecessor needed here. Proposition 3.1(1), p. 231, is a distance-convention lead, not claimed as an additional targeted page check.
+Targeted source check: p. 225, spanning surfaces, ambient equivalence and $`IS(L)`$ vertex/simplex conventions; p. 228, §2 around Theorem 2.1, irreducibility of a non-split link exterior. A knot is non-split; its single boundary component and exclusion of closed components make the spanning surface connected. Add **[10, p. 228]**, not Theorem A as a substitute locator for irreducibility. Theorem A, p. 226, gives connectedness and was additionally checked as background; it is not a predecessor needed here. Proposition 3.1(1), p. 231, is a distance-convention lead, not claimed as an additional targeted page check.
 
 ## R08 — Freedman–Hass–Scott (FHS)
 
@@ -96,7 +96,7 @@ Acquired from the Göttingen digitization centre GDZ, volume identifier `PPN3565
 
 **OCR warning:** this is a scan without a text layer. The working text was produced by macOS Vision OCR at 300 dpi (35 scanned pages). Prose and theorem statements were readable; formulas may contain recognition errors. The supplied verification checked key statements against images. No OCR text or scan is redistributed here.
 
-Checked: least-area comparison definition p. 609; Theorem 6.2 p. 630; boundary modifications §7, pp. 634–637; Theorem 7.2 p. 635; Existence Statement 7.3 p. 636, expressly unproved in that source. D09 records the unresolved full adaptation to proper isotopy with $J$-leaf boundary constraints. This source's Theorem 5.1 is not the target Theorem 5.1.
+Checked: least-area comparison definition p. 609; Theorem 6.2 p. 630; boundary modifications §7, pp. 634–637; Theorem 7.2 p. 635; Existence Statement 7.3 p. 636, expressly unproved in that source. D09 records the unresolved full adaptation to proper isotopy with $`J`$-leaf boundary constraints. This source's Theorem 5.1 is not the target Theorem 5.1.
 
 ## R09 — Anderson
 
@@ -116,7 +116,7 @@ Checked: defining-function setting near Lemma 1.2 p. 93; Theorem 2.2 pp. 98–99
 
 **Allen Hatcher.** *Notes on Basic 3-Manifold Topology*. Cornell University, online notes; copy acquired on 4 October 2026. Acquisition: [author's recorded PDF](https://pi.math.cornell.edu/~hatcher/3M/3Mfds.pdf). PDF SHA-256: `c8add1a8633f36cb50de313f8f340a3f2b63b5548077d6e30f9c51a073398ff6`.
 
-Checked edition: the acquired copy states the smooth category at printed p. 1; p. 20 (proof of Lemma 1.10) gives the same-boundary-disc isotopy fact in a three-ball; **Corollary 3.3, printed p. 59**, gives the compression-disc/$\pi_1$-injectivity interface for two-sided surfaces. The checklist's candidate p. 48 is not the pagination of this acquired copy. These are not Hatcher's *Algebraic Topology*; the two books must not be conflated.
+Checked edition: the acquired copy states the smooth category at printed p. 1; p. 20 (proof of Lemma 1.10) gives the same-boundary-disc isotopy fact in a three-ball; **Corollary 3.3, printed p. 59**, gives the compression-disc/$`\pi_1`$-injectivity interface for two-sided surfaces. The checklist's candidate p. 48 is not the pagination of this acquired copy. These are not Hatcher's *Algebraic Topology*; the two books must not be conflated.
 
 ## Context only — Przytycki–Schultens
 

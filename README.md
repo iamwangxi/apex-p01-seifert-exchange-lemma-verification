@@ -17,21 +17,21 @@ The PDF hash identifies the exact target even if the distribution filename chang
 
 ## Statement being checked
 
-For a non-trivial knot $K$, let $x,u,w$ be vertices of $IS(K)$ with
+For a non-trivial knot $`K`$, let $`x,u,w`$ be vertices of $`IS(K)`$ with
 
-$$
+```math
 \mathrm{dist}(x,u)=\mathrm{dist}(x,w)=1,
 \qquad \mathrm{dist}(u,w)=2.
-$$
+```
 
-Write $v\sim_{=}q$ for equality or adjacency. There are vertices $w_\uparrow,w_\downarrow$, chosen before any later common neighbour $z$, such that:
+Write $`v\sim_{=}q`$ for equality or adjacency. There are vertices $`w_\uparrow,w_\downarrow`$, chosen before any later common neighbour $`z`$, such that:
 
-1. **(a)** Each output is equal or adjacent to each of $x,u,w$.
-2. **(b)** Every $z$ equal or adjacent to both $u,w$ is equal or adjacent to both outputs.
-3. **(c)** $g(w_\uparrow)+g(w_\downarrow)\le g(u)+g(w)$.
-4. **(d)** If equality holds in (c), then $A(w_\uparrow)+A(w_\downarrow)<A(u)+A(w)$.
+1. **(a)** Each output is equal or adjacent to each of $`x,u,w`$.
+2. **(b)** Every $`z`$ equal or adjacent to both $`u,w`$ is equal or adjacent to both outputs.
+3. **(c)** $`g(w_\uparrow)+g(w_\downarrow)\le g(u)+g(w)`$.
+4. **(d)** If equality holds in (c), then $`A(w_\uparrow)+A(w_\downarrow)<A(u)+A(w)`$.
 
-Here $A(v)$ is the infimum of relative area in the smooth neat vertex class with boundary a leaf of the fixed longitude foliation. The essential order is $\forall(x,u,w)\,\exists(w_\uparrow,w_\downarrow)\,\forall z$. There is no claim of a canonical choice, uniqueness, or simultaneous disjointness of all the classes involved.
+Here $`A(v)`$ is the infimum of relative area in the smooth neat vertex class with boundary a leaf of the fixed longitude foliation. The essential order is $`\forall(x,u,w)\,\exists(w_\uparrow,w_\downarrow)\,\forall z`$. There is no claim of a canonical choice, uniqueness, or simultaneous disjointness of all the classes involved.
 
 ## Scope and method
 
@@ -60,8 +60,8 @@ These are verdicts on the original decomposed steps. They include conditional in
 - Replace the body's calls to **Theorem A.6 and Lemma A.7** by the complete **E(ii)** already cited in §3: Schultens Theorem 2 / Kapovich Appendix Corollary 11 in the checked preprint, followed by an **independent Hopf transversality argument**. The body actually calls Appendix A; this is a replacement route, not a claim that Appendix A was never used.
 - **D29:** retain the negative verdict only for the smooth ambient-isotopy reading of a genuine corner endpoint. Use tame isotopy to transport the corner object's topology, and smooth isotopy only between positive-width smooth endpoints. The paper's piecewise smooth convention prevents a blanket rejection under every category reading.
 - **D28/D35:** use smooth positive widths, actual geometric support bounds and four-sector common data; certify the smooth disc-swap competitors inside a **slightly larger smooth three-ball**.
-- **D43/D80/D81:** shrink both rounding and push-off scales, compare positive-parameter smooth tracks, and transport **preselected compression descendants**. Output classes remain fixed before $z$.
-- **D77–D79:** obtain uniform data only on a buffered good region; unify the gain coefficient and all width caps, fix $\varepsilon_*$ first, and choose $t$ afterwards.
+- **D43/D80/D81:** shrink both rounding and push-off scales, compare positive-parameter smooth tracks, and transport **preselected compression descendants**. Output classes remain fixed before $`z`$.
+- **D77–D79:** obtain uniform data only on a buffered good region; unify the gain coefficient and all width caps, fix $`\varepsilon_*`$ first, and choose $`t`$ afterwards.
 - Add **[10, p. 228]** for irreducibility of the knot exterior. Additional local analytic, category and citation corrections are detailed in [repairs.md](proof/repairs.md).
 
 ## Limits and open matters
@@ -90,6 +90,10 @@ Mermaid diagrams use GitHub's native Markdown rendering. On macOS, integrity can
 ## AI disclosure
 
 GPT-6.1 Sol performed the step decomposition, the line-by-line checks and an adversarial review, and drafted this package, in OpenAI Codex under human direction; Claude planned the process, checked key claims against the sources and reviewed the final text. No human expert has certified the work.
+
+## Revision note
+
+This revision differs from `0805270b7deb59fd8f7fbb0c4ddc7c0a68fbd469` only in how formulas are written. GitHub's Markdown processing removed backslash escapes such as `\{` and `\,` inside `$...$` and did not recognise some formulas, so every formula now uses GitHub's literal math syntax. No mathematical text was changed.
 
 ## License
 
